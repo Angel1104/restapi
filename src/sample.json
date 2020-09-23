@@ -1,0 +1,21 @@
+[
+    {
+       "id":"1",
+       "titulo" : "El lobo de wall streat",
+       "duracion": "3 h",
+       "director" : "Martin Scorsese",
+       "year": "2013",
+       "rating" : "9.5"
+
+    },
+
+    {
+        "id":"2",
+        "titulo" : "amigos de armas",
+        "duracion": "1 h 54 m",
+        "director" : "TOdd Phillips",
+        "year": "2016",
+        "rating" : "9"
+ 
+     }
+]
