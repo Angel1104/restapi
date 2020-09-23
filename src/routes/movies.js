@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 router.post('/',(req, res ) => {
     console.log(req.body);
-    res.send('resivido');
+    res.send('resived');
 });
 
 module.exports=router;
