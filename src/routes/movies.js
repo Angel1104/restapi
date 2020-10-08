@@ -56,8 +56,9 @@ router.put('/:id', (req,res)=>{
             }
         });
         res.json(movies);
+        res.status(200);
     }else{
-        res.status(500).json({error:"ingresar todos los datos "});
+        res.status(400).json({error:"ingresar todos los datos "});
     }
 });
     
