@@ -8,7 +8,6 @@ router.get('/', async(req,res)=>{
     const respuesta = await fetch('https://jsonplaceholder.typicode.com/users');
   //convierte la respuesta en un json
     const users = await  respuesta.json();
-    console.log(users);
     res.json(users);
    res.send('users')
 });

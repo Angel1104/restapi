@@ -4,7 +4,6 @@ const underscore = require('underscore');
 
 // importar desde sample los datos
 const movies = require('../sample.json')
-console.log(movies);
 //el get sera la const movies que tiene toda la info
 router.get('/', (req, res) => {
     res.json(movies);
@@ -17,7 +16,6 @@ router.post('/',(req, res ) => {
     if(titulo && director && year && duracion && rating ){
         const id =movies.length +1 ;//su id aumenta 1
         const nexMovie = {...req.body , id};//guardar la pelicula en la base desde el rq.body
-        console.log(nexMovie); // comprobamos por consola
         movies.push(nexMovie);// lo guardamos en sample con el pusheo
         res.json(movies);
 
@@ -59,7 +57,7 @@ router.put('/:id', (req,res)=>{
         });
         res.json(movies);
     }else{
-        res.status(500).json({error:"error algo anda mal loqutio te falta actalizar datos "});
+        res.status(500).json({error:"ingresar todos los datos "});
     }
 });
     
